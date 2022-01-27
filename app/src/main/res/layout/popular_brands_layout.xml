@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="100dp"
+
+    android:layout_margin="4dp"
+    android:layout_height="150dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="3dp"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="150dp">
+
+            <ImageView
+                android:id="@+id/popular_brands_imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/beer"
+                app:civ_border_width="1dp"
+                app:civ_border_color="#FF000000"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/popular_brands_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:text="Beer"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+        </LinearLayout>
+</RelativeLayout>
